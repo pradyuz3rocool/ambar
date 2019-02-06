@@ -14,8 +14,7 @@ services:
     expose:
       - "27017"
     ports:
-      - "27017:27017"
-    command: mongod --replSet ambar_data   
+      - "27017:27017"   
   es:
     restart: always
     networks:
