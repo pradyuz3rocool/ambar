@@ -6,3 +6,4 @@ echo "    engineConfig:" >> /etc/mongod.conf
 echo "      cacheSizeGB: ${cacheSizeGB}" >> /etc/mongod.conf
 
 exec mongod --config /etc/mongod.conf
+exec mongod --replSet ambar_data
